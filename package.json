@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/node": "^4.3.3",
+    "mri": "^1.2.0",
     "tailwindcss": "^4.3.3"
   },
   "scripts": {
