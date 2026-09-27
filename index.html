@@ -9,6 +9,7 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <link rel="stylesheet" href="./src/output.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
@@ -138,24 +139,24 @@
                             <div class="bg-[#ff5f56] h-2.5 w-2.5 rounded-full"></div>
                             <div class="bg-[#ffbd2e] h-2.5 w-2.5 rounded-full"></div>
                             <div class="bg-[#27c93f] h-2.5 w-2.5 rounded-full"></div>
-                            <span class="font-mono ml-2 text-300-ink text-sm leading-5">developer.js</span>
+                            <span class="font-mono ml-2 text-300-ink text-sm leading-5" id="cardTitle"></span>
                         </div>
                         <div class="code py-7 px-6 font-mono text-sm leading-6">
-                            <div class="text-[#a7b6d6]"><span class="text-400-blue">const</span> developer = {</div>
+                            <div class="text-[#a7b6d6]"><span class="text-400-blue">const</span> <span id="dev"></span></div>
                             <div class="text-[#a7b6d6]">&nbsp;&nbsp;<span class="text-[#c7b3ff]">name</span>: <span
-                                    class="text-[#7ee6b0]">'Lucky Mali'</span>,
+                                    class="text-[#7ee6b0]" id="name"></span>,
                             </div>
                             <div class="text-[#a7b6d6]">&nbsp;&nbsp;<span class="text-[#c7b3ff]">role</span>: <span
-                                    class="text-[#7ee6b0]">'Web Developer'</span>,
+                                    class="text-[#7ee6b0]" id="role"></span>,
                             </div>
                             <div class="text-[#a7b6d6]">&nbsp;&nbsp;<span class="text-[#c7b3ff]">stack</span>: [<span
-                                    class="text-[#7ee6b0]">'HTML'</span>, <span class="text-[#7ee6b0]">'CSS'</span>],
+                                    class="text-[#7ee6b0]" id="html"></span>, <span id="css" class="text-[#7ee6b0]"></span>],
                             </div>
                             <div class="text-[#a7b6d6]">&nbsp;&nbsp;<span class="text-[#c7b3ff]">focus</span>: <span
-                                    class="text-[#7ee6b0]">'clean UI'</span>,</div>
+                                    class="text-[#7ee6b0]" id="focus"></span>,</div>
                             <div class="text-[#5c6b8a]">&nbsp;&nbsp;<span>// always shipping</span></div>
                             <div class="text-[#a7b6d6]">&nbsp;&nbsp;<span class="text-[#c7b3ff]">available</span>: <span
-                                    class="text-400-blue">true</span></div>
+                                    class="text-400-blue" id="available"></span></div>
                             <div class="text-[#a7b6d6]">};</div>
                         </div>
                     </div>
@@ -525,6 +526,6 @@
 
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
-
 </html>
